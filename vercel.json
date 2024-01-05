@@ -1,8 +1,31 @@
 {
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
-        }
-    ]
+  "version": 2,
+  "env": {
+  },
+  "builds": [
+    {
+      "src": "server/index.ts",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["server/**"] }
+    },
+    {
+      "src": "vite.config.ts",
+      "use": "@nuxtjs/vercel-builder",
+      "config": { "includeFiles": ["src/**", "web/**"] }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/prompt-studio/translate/prompts",
+      "dest": "server/index.ts"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.+)",
+      "dest": "/$1"
+    }
+  ]
 }
