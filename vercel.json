@@ -1,3 +1,23 @@
 {
-  "devCommand": "npm run dev"
+  "version": 2,
+  "env": {
+  },
+  "builds": [
+    {
+      "src": "server/index.ts",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["server/**"] }
+    },
+    {
+      "src": "vite.config.ts",
+      "use": "@vercel/static",
+      "config": { "includeFiles": ["**"] }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/prompt-studio/(.*)",
+      "dest": "server/index.ts"
+    }
+  ]
 }
