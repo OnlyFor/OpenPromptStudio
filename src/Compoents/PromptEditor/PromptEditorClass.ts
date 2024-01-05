@@ -6,7 +6,7 @@ export const LOCAL_TRANSLATE_SERVER = process.env.LOCAL_TRANSLATE_HOST
               ? process.env.LOCAL_TRANSLATE_HOST
               : "//" + process.env.LOCAL_TRANSLATE_HOST
       }/prompt-studio`
-    : "0.0.0.0:443/prompt-studio"
+    : "http://0.0.0.0:39011/prompt-studio"
 
 
 
