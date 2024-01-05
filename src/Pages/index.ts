@@ -4,11 +4,12 @@ import type { VueConstructor } from "vue"
 
 export function getRoutes() {
     return [
+        // {
+        //     path: "/",
+        //     redirect: "/apps/ops/",
+        // },
         {
-            path: "/",
-            redirect: "/",
-        },
-        {
+            // path: "/apps/ops/",
             path: "/",
             name: "Index",
             component: vIndex,
