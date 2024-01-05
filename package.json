@@ -6,7 +6,7 @@
     "scripts": {
         "start": "npm-run-all --parallel dev serve",
         "dev": "vite --host 0.0.0.0",
-        "build": "vite build",
+        "build": "jiti ./server/index.ts && vite build",
         "preview": "vite serve",
         "serve": "jiti ./server/index.ts",
         "fetch": "node ./data/build.js",

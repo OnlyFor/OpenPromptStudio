@@ -29,4 +29,4 @@ app.listen(port, () => {
     console.log(`translate server started on port ${port}`)
 });
 
-module.exports = app;
+// module.exports = app;
