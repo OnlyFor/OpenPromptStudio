@@ -1,31 +1,3 @@
 {
-  "version": 2,
-  "env": {
-  },
-  "builds": [
-    {
-      "src": "server/index.ts",
-      "use": "jiti",
-      "config": { "includeFiles": ["server/**"] }
-    },
-    {
-      "src": "vite.config.ts",
-      "use": "npm run build",
-      "config": { "includeFiles": ["src/**", "web/**"] }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/prompt-studio/(.*)",
-      "dest": "server/index.ts"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.+)",
-      "dest": "/$1"
-    }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
