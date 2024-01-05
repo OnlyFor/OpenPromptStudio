@@ -28,3 +28,5 @@ const port = 443
 app.listen(port, () => {
     console.log(`translate server started on port ${port}`)
 })
+
+module.exports = app
