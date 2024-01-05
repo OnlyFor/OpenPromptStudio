@@ -5,11 +5,12 @@
   "builds": [
     {
       "src": "server/index.ts",
-      "use": "@vercel/node",
+      "use": "jiti",
       "config": { "includeFiles": ["server/**"] }
     },
     {
       "src": "vite.config.ts",
+      "use": "npm run build",
       "config": { "includeFiles": ["src/**", "web/**"] }
     }
   ],
