@@ -9,7 +9,7 @@
       "config": { "includeFiles": ["server/**"] }
     },
     {
-      "src": "vite.config.ts",
+      "src": "packages.json",
       "use": "@nuxtjs/vercel-builder",
       "config": { "includeFiles": ["src/**", "web/**"] }
     }
