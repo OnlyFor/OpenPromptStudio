@@ -2,7 +2,6 @@
   "version": 2,
   "env": {
   },
-  "buildCommand": "yarn run build",
   "builds": [
     {
       "src": "server/index.ts",
@@ -14,14 +13,7 @@
     {
       "src": "/prompt-studio/(.*)",
       "dest": "server/index.ts"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.+)",
-      "dest": "/$1"
     }
-  ]
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
