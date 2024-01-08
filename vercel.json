@@ -2,7 +2,6 @@
   "version": 2,
   "env": {
   },
-  "installCommand": "npm install",
   "regions": ["sfo1"],
   "builds": [
     {
@@ -18,14 +17,5 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/prompt-studio/translate/(.*)",
-      "dest": "server/index.ts"
-    },
-    {
-      "src": "/localPromptDefineMap.json",
-      "dest": "/data/build.js"
-    }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
