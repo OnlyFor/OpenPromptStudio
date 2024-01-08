@@ -6,8 +6,8 @@
   "regions": ["sfo1"],
   "builds": [
     {
-      "src": "api/index.ts",
-      "use": "@pinceau/jiti"
+      "src": "server/index.ts",
+      "use": "@vercel/node"
     },
     {
       "src": "package.json",
@@ -18,5 +18,5 @@
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [{ "source": "/prompt-studio/translate/prompts", "destination": "api/index.ts" }]
+  "rewrites": [{ "source": "/prompt-studio/translate/prompts", "destination": "server/index.ts" }]
 }
