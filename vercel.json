@@ -5,7 +5,7 @@
   "builds": [
     {
       "src": "server/index.ts",
-      "use": "@vercel/next",
+      "use": "@vercel/node",
       "config": { "includeFiles": ["server/**"] }
     },
     {
