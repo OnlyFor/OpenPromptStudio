@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/prompt-studio/translate/prompts/(.*)", "destination": "/prompt-studio/translate/prompts" }]
+}
