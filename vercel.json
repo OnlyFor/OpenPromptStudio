@@ -2,6 +2,7 @@
   "version": 2,
   "env": {
   },
+  "installCommand": "npm install",
   "regions": ["sfo1"],
   "builds": [
     {
