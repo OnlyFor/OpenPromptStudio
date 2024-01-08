@@ -5,8 +5,7 @@
   "builds": [
     {
       "src": "server/index.ts",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["server/**"] }
+      "use": "@vercel/node"
     },
     {
       "src": "package.json",
@@ -14,8 +13,17 @@
     },
     {
       "src": "/data/build.js",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["data/**"] }
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/prompt-studio/translate/(.*)",
+      "dest": "server/index.ts"
+    },
+    {
+      "src": "/localPromptDefineMap.json",
+      "dest": "/data/build.js"
     }
   ]
 }
