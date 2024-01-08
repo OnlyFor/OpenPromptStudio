@@ -6,7 +6,7 @@
   "builds": [
     {
       "src": "api/index.ts",
-      "use": "@unjs/jiti@1.16.0"
+      "use": "node_modules/jiti"
     },
     {
       "src": "package.json",
