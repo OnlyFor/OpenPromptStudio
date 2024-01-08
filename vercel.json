@@ -5,7 +5,7 @@
   "builds": [
     {
       "src": "server/index.ts",
-      "use": "@unjs/jiti",
+      "use": "jiti",
       "config": { "includeFiles": ["server/**"] }
     },
     {
