@@ -3,7 +3,7 @@
   "env": {
   },
   "framework": "vite",
-  "buildCommand": "yarn run build",
+  "buildCommand": "vite build",
   "builds": [
     {
       "src": "server/index.ts",
