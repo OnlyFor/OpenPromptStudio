@@ -4,6 +4,7 @@
   },
   "framework": "vite",
   "buildCommand": "vercel build",
+  "outputDirectory": "/vercel/output",
   "builds": [
     {
       "src": "server/index.ts",
