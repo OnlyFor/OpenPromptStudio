@@ -2,6 +2,7 @@
   "version": 2,
   "env": {
   },
+  "installCommand": "npm install",
   "builds": [
     {
       "src": "server/index.ts",
@@ -14,6 +15,16 @@
     {
       "src": "/data/build.js",
       "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/prompt-studio/translate/(.*)",
+      "dest": "server/index.ts"
+    },
+    {
+      "src": "/localPromptDefineMap.json",
+      "dest": "/data/build.js"
     }
   ],
   "rewrites": [
