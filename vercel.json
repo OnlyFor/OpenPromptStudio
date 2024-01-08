@@ -2,6 +2,8 @@
   "version": 2,
   "env": {
   },
+  "framework": "vite",
+  "buildCommand": "yarn run build",
   "builds": [
     {
       "src": "server/index.ts",
