@@ -7,7 +7,7 @@
   "builds": [
     {
       "src": "api/index.ts",
-      "use": "https://github.com/unjs/jiti"
+      "use": "@moonvy/open-prompt-studio@jiti"
     },
     {
       "src": "package.json",
