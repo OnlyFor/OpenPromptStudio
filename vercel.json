@@ -5,7 +5,7 @@
   "builds": [
     {
       "src": "server/index.ts",
-      "use": "jiti",
+      "use": "@vercel/node",
       "config": { "includeFiles": ["server/**"] }
     },
     {
@@ -16,12 +16,6 @@
       "src": "/data/build.js",
       "use": "@vercel/node",
       "config": { "includeFiles": ["data/**"] }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/prompt-studio/translate/prompts",
-      "dest": "server/index.ts"
     }
   ]
 }
