@@ -6,7 +6,7 @@
   "builds": [
     {
       "src": "api/index.ts",
-      "use": "@vercel/node"
+      "use": "@nmpjs/jiti"
     },
     {
       "src": "package.json",
@@ -14,7 +14,7 @@
     },
     {
       "src": "/data/build.js",
-      "use": "@vercel/static-build"
+      "use": "@vercel/node"
     }
   ],
   "rewrites": [{ "source": "/prompt-studio/translate/prompts", "destination": "api/index.ts" }]
