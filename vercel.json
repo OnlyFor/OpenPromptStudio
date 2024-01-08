@@ -6,7 +6,7 @@
   "builds": [
     {
       "src": "server/index.ts",
-      "use": "@vercel/node"
+      "use": "node_modules/.bin/jiti"
     },
     {
       "src": "package.json",
