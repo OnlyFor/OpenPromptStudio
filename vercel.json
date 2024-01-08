@@ -3,7 +3,7 @@
   "env": {
   },
   "framework": "vite",
-  "buildCommand": "vite build",
+  "buildCommand": "vercel build",
   "builds": [
     {
       "src": "server/index.ts",
