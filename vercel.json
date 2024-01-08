@@ -6,7 +6,7 @@
   "builds": [
     {
       "src": "api/index.ts",
-      "use": "@npmjs/jiti"
+      "use": "@pinceau/jiti"
     },
     {
       "src": "package.json",
