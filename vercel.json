@@ -15,5 +15,11 @@
       "src": "/data/build.js",
       "use": "@vercel/node"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/prompt-studio/translate/prompts",
+      "destination": "server/index.ts"
+    }
   ]
 }
