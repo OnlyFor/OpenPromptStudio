@@ -3,10 +3,11 @@
   "env": {
   },
   "installCommand": "npm install",
+  "regions": ["sfo1"],
   "builds": [
     {
       "src": "server/index.ts",
-      "use": "jiti@1.16.0"
+      "use": "jiti"
     },
     {
       "src": "package.json",
