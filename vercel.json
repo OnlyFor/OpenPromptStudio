@@ -2,21 +2,26 @@
   "version": 2,
   "env": {
   },
-  "framework": "vite",
-  "buildCommand": "vercel build",
-  "outputDirectory": "/vercel/path0/dist",
   "builds": [
     {
       "src": "server/index.ts",
       "use": "@vercel/node",
       "config": { "includeFiles": ["server/**"] }
+    },
+    {
+      "src": "vite.config.ts",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["src/**", "web/**"] }
     }
   ],
   "routes": [
     {
       "src": "/prompt-studio/translate/prompts/(.*)",
       "dest": "server/index.ts"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "vite.config.ts"
     }
   ]
-
 }
