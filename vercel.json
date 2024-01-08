@@ -17,5 +17,5 @@
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [{ "source": "/prompt-studio/translate/prompts", "destination": "server/index.ts" }]
 }
