@@ -7,7 +7,7 @@
   "builds": [
     {
       "src": "api/index.ts",
-      "use": "@moonvy/open-prompt-studio@jiti"
+      "use": "@pinceau/jiti"
     },
     {
       "src": "package.json",
