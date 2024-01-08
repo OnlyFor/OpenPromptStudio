@@ -7,7 +7,7 @@
   "builds": [
     {
       "src": "api/index.ts",
-      "use": "https://github.com/unjs/jiti/tree/v1"
+      "use": "https://github.com/unjs/jiti"
     },
     {
       "src": "package.json",
