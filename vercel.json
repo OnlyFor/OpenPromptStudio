@@ -10,7 +10,7 @@
     },
     {
       "src": "vite.config.ts",
-      "use": "@vercel/node",
+      "use": "@vercel/static",
       "config": { "includeFiles": ["src/**", "web/**"] }
     }
   ],
