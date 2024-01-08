@@ -5,7 +5,7 @@
   "regions": ["sfo1"],
   "builds": [
     {
-      "src": "server/index.ts",
+      "src": "api/index.ts",
       "use": "@vercel/node"
     },
     {
@@ -17,5 +17,5 @@
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [{ "source": "/prompt-studio/translate/prompts", "destination": "server/index.ts" }]
+  "rewrites": [{ "source": "/prompt-studio/translate/prompts", "destination": "api/index.ts" }]
 }
