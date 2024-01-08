@@ -26,11 +26,5 @@
       "src": "/localPromptDefineMap.json",
       "dest": "/data/build.js"
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/prompt-studio/translate/prompts",
-      "destination": "server/index.ts"
-    }
   ]
 }
