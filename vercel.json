@@ -5,7 +5,7 @@
   "builds": [
     {
       "src": "server/index.ts",
-      "use": "node"
+      "use": "@types/node"
     },
     {
       "src": "package.json",
@@ -13,7 +13,7 @@
     },
     {
       "src": "/data/build.js",
-      "use": "node"
+      "use": "@types/node"
     }
   ],
   "routes": [
