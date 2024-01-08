@@ -8,7 +8,7 @@ dotenv.config()
 const app = express()
 
 app.use(express.json())
-// app.use(cors())
+app.use(cors())
 
 app.post("/prompt-studio/translate/prompts", async (req: any, res: any) => {
     let input: { words: string[]; to: string } = req.body
