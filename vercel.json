@@ -16,12 +16,7 @@
   "routes": [
     {
       "src": "/prompt-studio/translate/prompts",
-      "dest": "server/index.ts"
-    }
-  ],
-  "headers": [
-    {
-      "source": "server/index.ts",
+      "dest": "server/index.ts",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" },
