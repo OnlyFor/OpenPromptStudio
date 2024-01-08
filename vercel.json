@@ -9,9 +9,8 @@
       "config": { "includeFiles": ["server/**"] }
     },
     {
-      "src": "vite.config.ts",
-      "use": "@vercel/static-build",
-      "config": { "includeFiles": ["src/**", "web/**"] }
+      "src": "package.json",
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
